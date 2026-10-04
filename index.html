@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Кінопошук</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <section class="box">
+      <h2>Search:</h2>
+      <form id="search-form" class="form">
+        <label for="title">Title:</label>
+        <input id="title" type="text" required>
+        <label for="type">Type:</label>
+        <select id="type">
+          <option value="movie">Movie</option>
+          <option value="series">Series</option>
+          <option value="episode">Episode</option>
+        </select>
+        <button type="submit">Search</button>
+      </form>
+    </section>
+
+    <section id="results" class="box" hidden></section>
+    <section id="details" class="box" hidden></section>
+  </main>
+  <script type="module" src="main.js"></script>
+</body>
+</html>
